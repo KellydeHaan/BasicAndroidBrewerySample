@@ -16,6 +16,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         uuidOut.text = SHUUIDMaker.makeUUID()
+        let dog = SHDog.init()!
+        
+        dog.setNameWith("Binky")
+        dog.setAgeWith(9)
+        dog.setLikesBelliesWithBoolean(true)
+        
+        let dogJson = SHDogFactory.fromDog(with: dog)
+        print(dogJson)
+        
+        let dog2 = SHDogFactory.fromJson(with: dogJson)
+        
+        print(dog2.getName())
     }
 
     override func didReceiveMemoryWarning() {

@@ -29,7 +29,18 @@ dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    implementation 'com.google.code.gson:gson:2.6.2'
+    j2objc 'org.j2objcgradle.com.google.code.gson:gson:2.6.2.7'
+
     testImplementation 'junit:junit:4.12'
+    testJ2objc 'org.j2objcgradle.junit:junit:4.12.0'
+
+    testImplementation 'com.google.guava:guava:19.0'
+    testJ2objc 'com.google.guava:guava:19.0:sources'
+
+
+
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
