@@ -1,2 +1,2 @@
-cd ../app
+cd ..
 ./gradlew j2objcBuild
