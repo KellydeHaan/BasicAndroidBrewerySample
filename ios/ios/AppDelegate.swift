@@ -7,15 +7,32 @@
 //
 
 import UIKit
+import j2objclib
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        DopplRuntime.start()
+        
+        let context = AndroidContentIOSContext()!
+        let prefs = SHAppPrefs(androidAppApplication: context)!
+        
+        let dog = SHDog()!
+        
+        dog.setNameWith("Binky")
+        dog.setAgeWith(9)
+        dog.setLikesBelliesWithBoolean(true)
+        
+        prefs.setFavoriteDogWith(dog)
+        
+        let dog2 = prefs.getFavoriteDog()!
+        
+        print(SHDogFactory.fromDog(with: dog2))
+        print(dog2.getName())
+        
         return true
     }
 
