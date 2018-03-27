@@ -39,7 +39,8 @@ dependencies {
     testImplementation 'com.google.guava:guava:19.0'
     testJ2objc 'com.google.guava:guava:19.0:sources'
 
-
+    testImplementation "co.doppl.lib:androidbasetest:0.9.0"
+    testJ2objc "co.doppl.lib:androidbasetest:0.9.0.0"
 
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
@@ -51,4 +52,9 @@ j2objcConfig {
     translatePattern {
         include '**/shared/**'
     }
+}
+
+task runIOSTests(type:Exec, dependsOn: 'j2objcBuild') {
+    workingDir '../ios'
+    commandLine 'xcodebuild', 'test', '-workspace', 'ios.xcworkspace', '-scheme', 'iosTestOnly', '-destination', 'platform=iOS Simulator,name=iPhone 7,OS=latest'
 }
