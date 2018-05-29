@@ -21,3 +21,5 @@ target 'ios' do
   end
 
 end
+
+pod 'RxAlamofire'

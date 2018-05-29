@@ -17,10 +17,18 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            minifyEnabled false
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -28,10 +36,22 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    j2objc 'org.j2objcgradle.com.google.code.gson:gson:2.6.2.7'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation "com.squareup.retrofit2:retrofit:$doppl_retrofit2_java"
+    implementation "com.squareup.retrofit2:converter-gson:$doppl_retrofit2_java"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$doppl_retrofit2_java"
+
+    implementation "io.reactivex.rxjava2:rxjava:$doppl_rxjava2_java"
+    j2objc "co.doppl.io.reactivex.rxjava2:rxjava:$doppl_rxjava2_doppl"
+    implementation "io.reactivex.rxjava2:rxandroid:$doppl_rxandroid_java"
+    j2objc "co.doppl.io.reactivex.rxjava2:rxandroid:$doppl_rxandroid_doppl"
+
 }
 
 j2objcConfig {

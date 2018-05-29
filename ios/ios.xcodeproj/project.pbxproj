@@ -17,6 +17,7 @@
 		63F9A4342060626F00B72E4D /* iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9A4332060626F00B72E4D /* iosTests.swift */; };
 		63F9A43F2060626F00B72E4D /* iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F9A43E2060626F00B72E4D /* iosUITests.swift */; };
 		7A74114C0FB724A5C7AF2E41 /* Pods_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602DB795A8315DC03A5F7E92 /* Pods_ios.framework */; };
+		A22395FC20BC33B800F63DA0 /* AlamoFireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22395FB20BC33B800F63DA0 /* AlamoFireService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		63F9A4402060626F00B72E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BB124FA0A9C2BF64C26881F /* Pods-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosUITests/Pods-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EF9214BEA56BF30A7A55A73 /* Pods-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosUITests/Pods-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A22395FB20BC33B800F63DA0 /* AlamoFireService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlamoFireService.swift; path = ../../../../Kelly/BasicAndroidSample/ios/ios/AlamoFireService.swift; sourceTree = "<group>"; };
 		AE4E4D0C256D48DBDC63C290 /* Pods-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosTests/Pods-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AEFE4B18F7B7A3ED7519DE64 /* Pods-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosTests/Pods-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		C93F62BB779DF89B754CA962 /* Pods-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios/Pods-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				63F9A4252060626F00B72E4D /* Assets.xcassets */,
 				63F9A4272060626F00B72E4D /* LaunchScreen.storyboard */,
 				63F9A42A2060626F00B72E4D /* Info.plist */,
+				A22395FB20BC33B800F63DA0 /* AlamoFireService.swift */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -177,7 +180,6 @@
 				63F9A4182060626F00B72E4D /* Frameworks */,
 				63F9A4192060626F00B72E4D /* Resources */,
 				94623B6F3FD82A08F2EADFFA /* [CP] Embed Pods Frameworks */,
-				390E6BF5FB0DA734E1C0ACE6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,8 +198,6 @@
 				63F9A42B2060626F00B72E4D /* Sources */,
 				63F9A42C2060626F00B72E4D /* Frameworks */,
 				63F9A42D2060626F00B72E4D /* Resources */,
-				20EC19D918BD0C8C7F964725 /* [CP] Embed Pods Frameworks */,
-				1A97D533EDD642626413B999 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,8 +217,6 @@
 				63F9A4362060626F00B72E4D /* Sources */,
 				63F9A4372060626F00B72E4D /* Frameworks */,
 				63F9A4382060626F00B72E4D /* Resources */,
-				ECE892F4603A4E41A989CFA2 /* [CP] Embed Pods Frameworks */,
-				01C27C9126415C93C9329CE5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,51 +302,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01C27C9126415C93C9329CE5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iosUITests/Pods-iosUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1A97D533EDD642626413B999 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iosTests/Pods-iosTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		20EC19D918BD0C8C7F964725 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iosTests/Pods-iosTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		278586939E3AB58AD5005449 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,21 +318,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		390E6BF5FB0DA734E1C0ACE6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios/Pods-ios-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		491DA7C9C0C0EAE4CCFBE655 /* [CP] Check Pods Manifest.lock */ = {
@@ -407,30 +345,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ios/Pods-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/j2objclib/j2objclib.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/j2objclib.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios/Pods-ios-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ECE892F4603A4E41A989CFA2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iosUITests/Pods-iosUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED5E9FDEAC7BB5E166529278 /* [CP] Check Pods Manifest.lock */ = {
@@ -459,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63F9A4212060626F00B72E4D /* ViewController.swift in Sources */,
+				A22395FC20BC33B800F63DA0 /* AlamoFireService.swift in Sources */,
 				63F9A41F2060626F00B72E4D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
